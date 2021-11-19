@@ -1,8 +1,8 @@
 footer {
-  color: $color-white;
-  background-color: $color-second;
   padding-top: 31px;
   padding-bottom: 33px;
+  background-color: $color-second;
+  color: $color-white;
 
   @media screen and (min-width: 768px) {
     padding-top: 28px;
@@ -11,12 +11,12 @@ footer {
 }
 
 .footer__text {
-  color: $color-primary;
   margin-bottom: 5px;
+  color: $color-primary;
 
   @media screen and (min-width: 768px) {
-    text-align: right;
     margin-bottom: 19px;
+    text-align: right;
   }
 }
 

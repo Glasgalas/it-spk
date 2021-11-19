@@ -7,9 +7,9 @@
   }
 
   &__link {
-    line-height: 1.22;
-    color: $color-white;
     margin-right: 39px;
+    color: $color-white;
+    line-height: 1.22;
     transition: all $t-duration $t-t-function;
 
     &:hover {

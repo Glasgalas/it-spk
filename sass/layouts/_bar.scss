@@ -3,18 +3,17 @@
   top: 0;
   left: 0;
   visibility: hidden;
-  opacity: 0;
-  // pointer-events: none;
-  transition: opacity $t-duration $t-t-function 250ms;
-  background-color: $color-second;
   width: 100vw;
   height: 60px;
   padding-top: 13px;
+  background-color: $color-second;
+  opacity: 0;
   z-index: 5;
+  transition: opacity $t-duration $t-t-function 250ms;
 
   &.bar-show {
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
 
     @media screen and (min-width: 768px) {
       visibility: hidden;

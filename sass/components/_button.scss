@@ -1,21 +1,19 @@
 .button {
   width: 298px;
   height: 50px;
-  // margin-bottom: 37px;
-  color: $color-text-add;
+  padding-left: 22px;
+  border: none;
   background-color: $color-primary;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.2;
+  color: $color-text-add;
   text-transform: uppercase;
   text-align: left;
-  border: none;
-  padding-left: 22px;
+  line-height: 1.2;
   transition: all $t-duration $t-t-function;
 
   @media screen and (min-width: 768px) {
     width: 253px;
-    // margin-bottom: 51px;
   }
   &::after {
     content: "";
@@ -23,14 +21,14 @@
     width: 20px;
     height: 15px;
     margin-left: 12px;
-    background-image: url(../../images/arrow-right.svg);
+    background-image: url(../images/arrow-right.svg);
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   &:hover {
-    opacity: 0.8;
-    color: $color-text-dark;
     box-shadow: 4px 4px 8px 6px $color-hover;
+    color: $color-text-dark;
+    opacity: 0.8;
   }
 }

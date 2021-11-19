@@ -21,7 +21,6 @@
   grid-template-columns: repeat(1, 1fr);
   grid-row-gap: 13px;
   grid-column-gap: 30px;
-  // grid-template-rows: repeat(3, auto);
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);

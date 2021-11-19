@@ -1,1 +1,1 @@
-# palitra
+# IT-SPK

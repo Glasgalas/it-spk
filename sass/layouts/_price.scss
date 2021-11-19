@@ -13,25 +13,23 @@
   }
 
   &-wrapper {
-    margin-top: 4px;
     display: flex;
     flex-wrap: nowrap;
+    margin-top: 4px;
   }
 
   &__button {
-    height: 50px;
-    text-transform: uppercase;
-    border: 2px solid $color-text-dark;
-    // padding: 17px 54px 18px 22px;
-    // padding-top: 17px;
-    padding-left: 9px;
-    padding-right: 8px;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: 700;
     display: inline-flex;
     flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding-left: 9px;
+    padding-right: 8px;
+    border: 2px solid $color-text-dark;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
     white-space: nowrap;
     transition: all $t-duration $t-t-function;
 
@@ -66,6 +64,7 @@
 
   &__title {
     margin-bottom: 20px;
+
     @media screen and (min-width: 1080px) {
       margin-bottom: 2px;
     }
@@ -73,7 +72,6 @@
 
   &__text {
     line-height: 1.4;
-    // min-width: 340px;
 
     &:last-child {
       margin-top: 1em;
@@ -85,6 +83,16 @@
     flex-direction: column;
     align-items: center;
   }
+
+  &__item {
+    height: inherit;
+    border: 2px solid $color-text-dark;
+    transition: all $t-duration $t-t-function;
+
+    &:hover {
+      box-shadow: 4px 4px 8px 6px $color-hover;
+    }
+  }
 }
 
 .plan--flex {
@@ -93,44 +101,21 @@
   color: $color-text-dark;
 }
 
-.price__item {
-  // min-width: 247px;
-  border: 2px solid $color-text-dark;
-  height: inherit;
-  transition: all $t-duration $t-t-function;
-
-  @media screen and (max-width: 768px) {
-    // width: 345px;
-  }
-
-  &:hover {
-    box-shadow: 4px 4px 8px 6px $color-hover;
-  }
-
-  // &:last-child {
-  //   margin-bottom: 35px;
-
-  //   @media screen and (min-width: 768px) {
-  //     margin-bottom: 0;
-  //   }
-  // }
-}
-
 .plan {
+  align-items: center;
   padding: 38px 19px 40px;
   text-align: center;
-  align-items: center;
 
   &__title {
     margin-bottom: 16px;
   }
 
   &__name {
-    text-transform: uppercase;
+    margin-bottom: 6px;
     font-size: 26px;
     font-weight: 700;
+    text-transform: uppercase;
     line-height: 1.4;
-    margin-bottom: 6px;
 
     @media screen and (min-width: 1080px) {
       height: 72px;
@@ -138,16 +123,16 @@
   }
 
   &__price {
-    font-size: 70px;
-    line-height: 1.2;
-    font-weight: 700;
     margin-bottom: 3px;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.2;
   }
 
   &__pay {
+    margin-bottom: 28px;
     font-size: 20px;
     line-height: 1.2;
-    margin-bottom: 28px;
   }
 }
 
