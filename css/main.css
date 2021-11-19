@@ -239,7 +239,7 @@ header {
   display: block;
   width: 26px;
   height: 18px;
-  background: url(../../images/burger.svg);
+  background: url(../images/burger.svg);
   background-size: contain;
 }
 
@@ -283,7 +283,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../../images/desktop-bg.jpg);
+    background-image: url(../images/desktop-bg.jpg);
     height: 600px;
     margin-bottom: 90px;
   }
@@ -467,27 +467,27 @@ header {
 }
 
 .services__item:nth-child(1)::after {
-  background-image: url(../../images/features/repair.svg);
+  background-image: url(../images/features/repair.svg);
 }
 
 .services__item:nth-child(2)::after {
-  background-image: url(../../images/features/repair-serv.svg);
+  background-image: url(../images/features/repair-serv.svg);
 }
 
 .services__item:nth-child(3)::after {
-  background-image: url(../../images/features/pc-serv.svg);
+  background-image: url(../images/features/pc-serv.svg);
 }
 
 .services__item:nth-child(4)::after {
-  background-image: url(../../images/features/find.svg);
+  background-image: url(../images/features/find.svg);
 }
 
 .services__item:nth-child(5)::after {
-  background-image: url(../../images/features/cloud.svg);
+  background-image: url(../images/features/cloud.svg);
 }
 
 .services__item:nth-child(6)::after {
-  background-image: url(../../images/features/car.svg);
+  background-image: url(../images/features/car.svg);
 }
 
 .services__item__text {
@@ -658,15 +658,15 @@ header {
 }
 
 .features__offer__item:nth-child(1)::before {
-  background-image: url(../../images/1.svg);
+  background-image: url(../images/1.svg);
 }
 
 .features__offer__item:nth-child(2)::before {
-  background-image: url(../../images/2.svg);
+  background-image: url(../images/2.svg);
 }
 
 .features__offer__item:nth-child(3)::before {
-  background-image: url(../../images/3.svg);
+  background-image: url(../images/3.svg);
 }
 
 .price {
@@ -725,7 +725,7 @@ header {
   width: 22px;
   height: 21px;
   margin-left: 10px;
-  background-image: url(../../images/arrow-download.svg);
+  background-image: url(../images/arrow-download.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -942,7 +942,7 @@ header {
 }
 
 .order {
-  background-image: url(../../images/desktop-footer.jpg);
+  background-image: url(../images/desktop-footer.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1064,7 +1064,7 @@ header {
   width: 20px;
   height: 20px;
   border: 6px solid #ececec;
-  background-image: url(../../images/checkbox-form.svg);
+  background-image: url(../images/checkbox-form.svg);
   background-size: contain;
 }
 

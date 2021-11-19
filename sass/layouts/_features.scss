@@ -62,15 +62,15 @@
     }
 
     &:nth-child(1)::before {
-      background-image: url(../../images/1.svg);
+      background-image: url(../images/1.svg);
     }
 
     &:nth-child(2)::before {
-      background-image: url(../../images/2.svg);
+      background-image: url(../images/2.svg);
     }
 
     &:nth-child(3)::before {
-      background-image: url(../../images/3.svg);
+      background-image: url(../images/3.svg);
     }
   }
 }
