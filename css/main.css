@@ -798,6 +798,12 @@ header {
   margin-bottom: 6px;
 }
 
+@media screen and (min-width: 1080px) {
+  .plan__name {
+    height: 72px;
+  }
+}
+
 .plan__price {
   font-size: 70px;
   line-height: 1.2;

@@ -131,6 +131,10 @@
     font-weight: 700;
     line-height: 1.4;
     margin-bottom: 6px;
+
+    @media screen and (min-width: 1080px) {
+      height: 72px;
+    }
   }
 
   &__price {
