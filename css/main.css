@@ -269,7 +269,7 @@ header {
 }
 
 .hero {
-  background-image: url(../../images/mobile-bg.jpg);
+  background-image: url(../images/mobile-bg.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
