@@ -1,0 +1,36 @@
+.button {
+  width: 298px;
+  height: 50px;
+  // margin-bottom: 37px;
+  color: $color-text-add;
+  background-color: $color-primary;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: left;
+  border: none;
+  padding-left: 22px;
+  transition: all $t-duration $t-t-function;
+
+  @media screen and (min-width: 768px) {
+    width: 253px;
+    // margin-bottom: 51px;
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    margin-left: 12px;
+    background-image: url(../../images/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    color: $color-text-dark;
+    box-shadow: 4px 4px 8px 6px $color-hover;
+  }
+}

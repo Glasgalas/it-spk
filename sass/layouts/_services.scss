@@ -1,0 +1,168 @@
+.services {
+  &__title {
+    margin-bottom: 38px;
+
+    @media screen and (min-width: 1080px) {
+      margin-bottom: 52px;
+    }
+  }
+
+  &__wrap {
+    display: grid;
+    column-gap: 42px;
+    row-gap: 38px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-bottom: 70px;
+    padding-left: 20px;
+
+    @media screen and (min-width: 768px) and (max-width: 1079px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+    @media screen and (min-width: 1079px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+
+      row-gap: 63px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 63px;
+      height: 53px;
+      background-color: $color-primary;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 63px;
+      height: 57px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: -12px;
+      left: -15px;
+    }
+
+    &:nth-child(1)::after {
+      background-image: url(../../images/features/repair.svg);
+    }
+
+    &:nth-child(2)::after {
+      background-image: url(../../images/features/repair-serv.svg);
+    }
+
+    &:nth-child(3)::after {
+      background-image: url(../../images/features/pc-serv.svg);
+    }
+
+    &:nth-child(4)::after {
+      background-image: url(../../images/features/find.svg);
+    }
+
+    &:nth-child(5)::after {
+      background-image: url(../../images/features/cloud.svg);
+    }
+
+    &:nth-child(6)::after {
+      background-image: url(../../images/features/car.svg);
+    }
+
+    &__text {
+      font-size: 18px;
+      padding-left: 75px;
+      font-weight: 700;
+    }
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 38px;
+    color: $color-text-dark;
+
+    @media screen and (min-width: 1080px) {
+      font-size: 24px;
+      margin-bottom: 31px;
+    }
+  }
+}
+
+.services--flex {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 42px;
+}
+
+.services__text {
+  line-height: 1.4;
+  margin-bottom: 1em;
+
+  @media screen and (min-width: 1080px) {
+    margin-bottom: 42px;
+  }
+}
+
+.services__target {
+  align-items: center;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1080px) {
+    margin-bottom: 132px;
+  }
+
+  &-title {
+    display: inline-flex;
+
+    margin-bottom: 25px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: $color-text-dark;
+    align-items: center;
+
+    @media screen and (min-width: 1080px) {
+      padding-left: 81px;
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: relative;
+      bottom: 15px;
+      width: 159px;
+      height: 158px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url(../../images/target.svg);
+
+      @media screen and (min-width: 1080px) {
+        width: 164px;
+        height: 163px;
+      }
+    }
+  }
+
+  &-text {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.23;
+    color: $color-text-dark;
+  }
+}
+
+.brand {
+  white-space: pre;
+}

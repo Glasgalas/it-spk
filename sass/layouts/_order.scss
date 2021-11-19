@@ -1,0 +1,141 @@
+.order {
+  background-image: url(../../images/desktop-footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 430px;
+
+  &-div {
+    display: flex;
+    align-items: center;
+    padding-top: 63px;
+    margin-bottom: 39px;
+
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      padding-top: 0;
+      padding-left: 28px;
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1080px) {
+      padding-left: 58px;
+    }
+  }
+
+  &__text {
+    color: $color-white;
+    font-size: 33px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    @media screen and (min-width: 768px) and (max-width: 1079px) {
+      // align-items: center;
+    }
+
+    @media screen and (min-width: 1080px) {
+      font-size: 36px;
+      // padding: 102px 0 0 58px;
+    }
+  }
+}
+
+.form {
+  width: 298px;
+  flex-direction: column;
+  font-size: 18px;
+  @media screen and (min-width: 768px) {
+    // padding-top: 50px;
+    width: 343px;
+  }
+
+  & > button {
+    width: 100%;
+    padding-left: 82px;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 94px;
+    }
+  }
+
+  &-wrap {
+    padding-bottom: 28px;
+    @media screen and (min-width: 768px) {
+      padding-top: 50px;
+      padding-bottom: 35px;
+    }
+  }
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 17px;
+  padding: 10px 20px 7px;
+  background-color: $color-bg-form;
+
+  &:hover,
+  &:focus {
+    outline: 2px solid $color-primary;
+  }
+
+  &::placeholder {
+    color: $color-text-dark;
+    line-height: 1.4;
+  }
+}
+
+.message {
+  height: 70px;
+  resize: none;
+  margin-bottom: 14px;
+}
+
+.policy {
+  position: relative;
+
+  &__text {
+    color: $color-text-light;
+    font-size: 10px;
+    line-height: 1.4;
+    margin-bottom: 17px;
+    padding-left: 27px;
+    padding-top: 3px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -298px;
+      top: 22px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 6px solid $color-bg-form;
+      background-image: url(../../images/checkbox-form.svg);
+      background-size: contain;
+      // background-repeat: no-repeat;
+
+      @media screen and (min-width: 768px) {
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked + .policy__text::before {
+    background-image: url(../../images/checkbox-checked.svg);
+    background-size: contain;
+  }
+}

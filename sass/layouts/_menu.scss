@@ -1,0 +1,159 @@
+.menu {
+  position: fixed;
+  top: 0;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  z-index: 8;
+  background-color: rgb(250, 248, 248);
+  opacity: 1;
+  visibility: visible;
+  overflow-y: auto;
+  overflow: auto;
+  padding-top: 40px;
+  padding-bottom: 34px;
+  width: 100%;
+  height: 100vh;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 100vh;
+    right: 0;
+    overflow-y: scroll;
+  }
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity $t-duration $t-t-function 250ms;
+  }
+
+  &-logo {
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 37px;
+    right: 45px;
+    padding: 3px;
+    width: 26px;
+    height: 18px;
+
+    @media screen and (min-width: 768px) {
+      top: 35px;
+      right: 57px;
+    }
+
+    // &:hover,
+    // &:focus {
+    //   // fill: $accent-color;
+    //   // transition: all $t-duration $t-t-function;
+    // }
+  }
+}
+
+.menu-nav {
+  // display: flex;
+  // flex-direction: column;
+
+  // &:ntn-child(3) {
+  //   margin-right: 0px;
+  // }
+  margin-bottom: 38px;
+
+  &-item {
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 1.22;
+    color: $color-text-dark;
+
+    // margin-right: 39px;
+    transition: all $t-duration $t-t-function;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.menu-contacts {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // color: $color-text-dark;
+  padding-left: 13px;
+  margin-bottom: 44px;
+
+  &__provider {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__item {
+    // display: flex;
+    // justify-content: center;
+    // text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    width: 179px;
+    // width: 156px;
+    margin-right: 4px;
+    color: $color-text-dark;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.23;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+
+.menu-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.lang {
+  display: flex;
+  justify-content: center;
+}
+.btn-lang {
+  width: 34px;
+  height: 26px;
+  background-color: $color-button-lang;
+  &:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+.menu-order {
+  position: fixed;
+  bottom: 34px;
+
+  @media screen and (max-width: 767px) {
+    left: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    // position: relative;
+    right: 100px;
+  }
+}

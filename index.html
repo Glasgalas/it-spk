@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>it-spk</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <div class="flex header-wrapper">
+            <div class="logo-wrapper">
+              <a href="./" class="logo">
+                <img
+                  src="./images/logo.svg"
+                  alt="Logo company"
+                  width="144px"
+                  height="48px"
+              /></a>
+              <div class="thumb">
+                <span class="ua">ua</span>
+              </div>
+            </div>
+            <div class="menu-wrapper">
+              <nav>
+                <ul class="list site-nav">
+                  <li><a href="#about" class="site-nav__link">О нас</a></li>
+                  <li><a href="#services" class="site-nav__link">Услуги</a></li>
+                  <li>
+                    <a href="#price" class="site-nav__link">Цены</a>
+                  </li>
+                </ul>
+              </nav>
+              <ul class="list contacts-nav">
+                <li class="contacts-nav__item">
+                  <span class="contacts-nav__provider">lifecell</span>
+                  <a class="contacts-nav__link" href="tel: +380935412092"
+                    >+380 93 541 20 92</a
+                  >
+                </li>
+                <li class="contacts-nav__item">
+                  <span class="contacts-nav__provider">Vodafone</span>
+                  <a class="contacts-nav__link" href="tel: +380993112979"
+                    >+380 99 311 29 79
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button class="menu-btn" id="menu-btn"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- герой -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">IT-Аутсорсинг компаниям в Киеве</h1>
+          <p class="hero-subtitle">Обслуживание компьютеров в Киеве</p>
+          <p class="hero-text">
+            <span class="hero-text-big">От</span>
+            <span class="hero-text-bigger">315грн</span>
+            <span class="hero-text-big">/мес</span>
+            за 1 рабочее место
+          </p>
+          <div class="flex">
+            <button type="button" id="modal-btn" class="button" data-modal-open>
+              Отправить заявку
+            </button>
+            <p class="hero-subtext">
+              Мы знаем как сложно найти хорошую компанию по обслуживанию
+              компьютеров в Киеве. Исправим это!
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- о компании -->
+      <section class="about">
+        <div class="container">
+          <a name="about"></a>
+          <div class="about-flex-wrapper">
+            <div>
+              <h2 class="title about__title">О нас</h2>
+            </div>
+            <div>
+              <p class="about__text">
+                IT-SPK - сервисная компания по обслуживанию АйТи инфраструктуры
+                для бизнеса. Мы небольшая команда фанатов своего дела c
+                многолетним опытом работы. Решаем любые ИТ задачи в Киеве:
+                проектирование, монтаж и поддержка ИТ инфраструктуры, настройка
+                и поддержка серверов, виртуализация, обслуживание компьютеров,
+                поддержка пользователей.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- сервисы -->
+      <section class="services">
+        <div class="container">
+          <a name="services"></a>
+          <h2 class="title services__title">Услуги</h2>
+          <ul class="services__wrap">
+            <li class="services__item">
+              <p class="services__item__text">Обслуживание компьютеров</p>
+            </li>
+            <li class="services__item">
+              <p class="services__item__text">Обслуживание серверов</p>
+            </li>
+            <li class="services__item">
+              <p class="services__item__text">Виртуализация 1С</p>
+            </li>
+            <li class="services__item">
+              <p class="services__item__text">
+                Аудит<br />
+                ИТ-инфраструктуры и проектирование
+              </p>
+            </li>
+            <li class="services__item">
+              <p class="services__item__text">Резервное копирование</p>
+            </li>
+            <li class="services__item">
+              <p class="services__item__text">Переезд ИТ инфраструктуры</p>
+            </li>
+          </ul>
+
+          <div class="flex-parent services__target">
+            <div class="flex-child">
+              <h2 class="services__target-title">Цель <br />IT-SPK</h2>
+            </div>
+            <div class="flex-child">
+              <p class="services__target-text">
+                Сократить расходы на ИТ + оптимизировать работу = увеличить вашу
+                прибыль и отрыв от конкурентов
+              </p>
+            </div>
+          </div>
+
+          <h3 class="services__subtitle">
+            C IT-SPK ваш офис будет работать эффективно и безотказно
+          </h3>
+          <div class="flex-parent">
+            <p class="services__text flex-child">
+              За время работы мы подобрали оптимальные решения по соотношению
+              цена-качество для организации офисной IT-инфраструктуры. Огромный
+              опыт обслуживания объектов в Киеве от офиса на несколько рабочих
+              мест до офисно-производственных комплексов на тысячи квадартных
+              метров и более полутора сотен подключенных абонентов.
+            </p>
+            <p class="services__text flex-child">
+              Абонентское обслуживание компьютеров в Киеве уже сейчас не
+              оставляет шансов на выживание обычным сисадминам в штате компании,
+              прежний подход дороже и неэффективный. С первого дня работы с нами
+              вы получаете доступ ко всем нашим знаниям, опыту и ресурсам.
+            </p>
+          </div>
+          <button type="button" id="modal-btn2" class="button" data-modal-open2>
+            Отправить заявку
+          </button>
+        </div>
+      </section>
+      <!-- цель -->
+      <section class="features">
+        <div class="container">
+          <p class="offer features__text">
+            Подключить обслуживание компьютеров у нас очень просто
+          </p>
+
+          <ul class="list features__offer">
+            <li class="features__offer__item">
+              <p class="offer__text">
+                Оставить заявку на сайте или просто позвонить нам
+              </p>
+            </li>
+            <li class="features__offer__item">
+              <p class="offer__text">
+                Мы проведем бесплатный аудит и подготовим коммерческое
+                предложение
+              </p>
+            </li>
+            <li class="features__offer__item">
+              <p class="offer__text">
+                Заключаем договор и ваш офис работает безотказно
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- цены -->
+      <section class="price">
+        <div class="container">
+          <a name="price"></a>
+          <h2 class="title price__title">Цены</h2>
+          <div class="price-grid">
+            <div class="price-block">
+              <div class="price-flex">
+                <p class="price__text">
+                  У нас нет зарплаты или фиксированной суммы в месяц, все
+                  рассчеты базируются только на количестве компьютеров, которые
+                  мы берем на обслуживание и подключенных услугах. Платите
+                  только за что чем пользуетесь -
+                  <strong>максимальная экономия и эффективность</strong>.
+                </p>
+                <p class="price__text">
+                  Оставьте заявку на обслуживание компьютеров и мы подготовим
+                  предложение специально для вас
+                </p>
+              </div>
+              <div class="price-wrapper">
+                <button class="price__button fst_btn">Прайс it</button>
+                <button class="price__button">Прайс монтаж</button>
+              </div>
+            </div>
+            <div>
+              <ul class="items-grid">
+                <li class="price__item">
+                  <div class="plan">
+                    <p class="plan__title">Тарифный план</p>
+                    <p class="plan__name">Легкий старт</p>
+                    <p class="plan__price">350</p>
+                    <p class="plan__pay">грн/мес</p>
+                    <p class="plan__item">за 1 рабочее место</p>
+                  </div>
+                </li>
+                <li class="price__item">
+                  <div class="plan">
+                    <p class="plan__title">Тарифный план</p>
+                    <p class="plan__name z">Бизнес</p>
+                    <p class="plan__price">315</p>
+                    <p class="plan__pay">грн/мес</p>
+                    <p class="plan__item">от 15 рабочих мест</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- клиенты -->
+      <section class="clients">
+        <div class="container">
+          <h2 class="title clients__title">Клиенты</h2>
+          <ul class="clients-grid">
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <img
+                  src="./images/customers/auto-speed.svg"
+                  alt="gfe logo"
+                  width="137"
+                />
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <img
+                  src="./images/customers/crofts-accountants.svg"
+                  alt="gfe logo"
+                  width="137"
+                />
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <img
+                  src="./images/customers/greens-food-suppliers.svg"
+                  alt="gfe logo"
+                  width="137"
+                />
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <img
+                  src="./images/customers/petes-blinds.svg"
+                  alt="gfe logo"
+                  width="137"
+                />
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <img
+                  src="./images/customers/space-cube.svg"
+                  alt="gfe logo"
+                  width="137"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- инфо -->
+      <section class="info">
+        <div class="container">
+          <h4 class="info__title">Организация IT-инфраструктуры в Киеве</h4>
+          <div class="grid-parent info__text">
+            <div>
+              <p>
+                Мы имеем большой опыт организации работы IT отделов разных
+                компаний из города Киев и на основе этого создали универсальный
+                протокол работы, который гарантирует стабильно высокое качество
+                предоставления услуг. Всегда на старте проводим аудит
+                существующих апаратных и программных решений. Берем во внимание
+                как проложены сети, установленное серверное и коммутационное
+                оборудование, к каким провайдерам и на каких условиях
+                подключено. Анализ установленных компьютеров и оборудования,
+                завязанных в сеть компании. По результатам этого этапа работы мы
+                даем комплексный отчет с перечнем найденных критических и
+                потенциально проблемных мест в ИТ-инфраструктуре компании, с
+                вариантами их устранения. В случае если идет проектирование
+                IT-инфраструктуры с нуля, мы учтем все пожелания и сразу сделаем
+                все необходимое для бесперебойной работы компьютерной сети
+                компании. Спланируем и организуем переезд всех IT-систем офиса
+                на новую локацию или удаленную работу сотрудников при
+                необходимости.
+              </p>
+            </div>
+            <div>
+              <p>
+                Услуги обслуживания компьютеров и серверов в Киеве это не только
+                установить Windows и кинуть провод, это большой и сложный
+                комплекс услуг:
+              </p>
+              <ul class="list">
+                <li>- Установка, настройка и сопровождение ПО;</li>
+                <li>
+                  - Администрирование доменных, почтовых, файловых и хостинг
+                  серверов;
+                </li>
+                <li>- Обеспечение защиты данных;</li>
+                <li>- Восстановление потерянных данных;</li>
+                <li>
+                  - Внедрение решений по защите конфиденциальной информации;
+                </li>
+                <li>- Безопасный удаленный доступ к информации;</li>
+                <li>
+                  - Обслуживание бухгалтерских программ 1С Предприятие, M.E.Doc
+                  и других;
+                </li>
+                <li>- Внедрение и сопровождение серверов IP телефонии;</li>
+                <li>- Монтаж и обслуживание сетей (СКС);</li>
+                <li>- Ремонт и обслуживание компьютеров, оргтехники;</li>
+                <li>
+                  - Оперативная техническая поддержка и консультация
+                  сотрудников;
+                </li>
+                <li>
+                  - Ведение первичной документации, сметы, логистика, снабжение
+                  ИТ-отдела.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- заявка -->
+      <section class="order">
+        <div class="container grid-parent">
+          <div class="order-div">
+            <p class="order__text">
+              Оставьте заявку на обслуживание компьютеров и мы свяжемся с вами
+            </p>
+          </div>
+
+          <div class="form-wrap">
+            <form class="form flex-parent" action="">
+              <label for="">
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+                  require
+                  placeholder="Имя"
+                />
+              </label>
+              <label for="">
+                <input
+                  class="input"
+                  type="tel"
+                  name="phone"
+                  pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                  required
+                  placeholder="Номер телефона"
+                />
+              </label>
+              <label for="">
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="E-mail"
+                />
+              </label>
+              <label for="">
+                <textarea
+                  class="input message"
+                  name="message"
+                  id="user-message"
+                  placeholder="Сообщение"
+                ></textarea>
+              </label>
+              <label class="policy">
+                <input
+                  class="checkbox"
+                  type="checkbox"
+                  name="policy"
+                  value="agree"
+                  required
+                  checked
+                />
+                <p class="policy__text">
+                  Даю согласие на обработку персональных данных
+                </p>
+              </label>
+              <button class="button btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="flex-parent">
+          <div class="flex-child">
+            <a href="mailto: info@it-spk.com" class="footer__mail"
+              >info@it-spk.com</a
+            >
+            <ul class="list">
+              <li class="footer__contacts">
+                <a class="contacts-nav__link" href="tel: +380935412092"
+                  >+380 93 541 20 92</a
+                >
+                <span class="contacts-nav__provider"> lifecell </span>
+              </li>
+              <li class="footer__contacts">
+                <a class="contacts-nav__link" href="tel: +380993112979"
+                  >+380 99 311 29 79 </a
+                ><span class="contacts-nav__provider">Vodafone</span>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-child">
+            <p class="footer__text">
+              Обслуживание компьютеров и <br />монтаж сетей в Киеве
+            </p>
+            <p class="copyright__text">IT-SPK &copy; 2021</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- модалка -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btn" id="modal-btn-close" data-modal-close>
+          <img src="./images/close.svg" alt="" width="17" height="17" />
+        </button>
+        <form class="form flex-parent" action="">
+          <label for="">
+            <input
+              class="input"
+              type="text"
+              name="name"
+              pattern="^[A-Za-zА-Яа-яЁё\s]+$"
+              require
+              placeholder="Имя"
+            />
+          </label>
+          <label for="">
+            <input
+              class="input"
+              type="tel"
+              name="phone"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              required
+              placeholder="Номер телефона"
+            />
+          </label>
+          <label for="">
+            <input
+              class="input"
+              type="email"
+              name="email"
+              required
+              placeholder="E-mail"
+            />
+          </label>
+          <label for="">
+            <textarea
+              class="input message"
+              name="message"
+              id="user-message"
+              placeholder="Сообщение"
+            ></textarea>
+          </label>
+          <label class="policy">
+            <input
+              class="checkbox"
+              type="checkbox"
+              name="policy"
+              value="agree"
+              required
+              checked
+            />
+            <p class="policy__text">
+              Даю согласие на обработку персональных данных
+            </p>
+          </label>
+          <button class="button btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- меню is-hidden -->
+    <div class="menu is-hidden" data-menu>
+      <div class="container">
+        <div class="">
+          <div class="menu-logo">
+            <a href="./" class="logo">
+              <img
+                src="./images/logo-mobile.svg"
+                alt="Logo company"
+                width="180px"
+                height="60px"
+            /></a>
+          </div>
+
+          <div class="menu-wrap">
+            <ul class="menu-contacts">
+              <li class="menu-contacts__item">
+                <a class="menu-contacts__link" href="tel: +380935412092"
+                  >+380 93 541 20 92</a
+                >
+                <span class="menu-contacts__provider">lifecell</span>
+              </li>
+              <li class="menu-contacts__item">
+                <a class="menu-contacts__link" href="tel: +380993112979"
+                  >+380 99 311 29 79
+                </a>
+                <span class="menu-contacts__provider">Vodafone</span>
+              </li>
+            </ul>
+
+            <nav class="menu-nav">
+              <ul>
+                <li class="menu-nav-item">
+                  <a href="#about" class="menu-nav__link" id="link1">О нас</a>
+                </li>
+                <li class="menu-nav-item" id="link2">
+                  <a href="#services" class="menu-nav__link">Услуги</a>
+                </li>
+                <li class="menu-nav-item" id="link3">
+                  <a href="#price" class="menu-nav__link">Цены</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="lang">
+              <button class="btn-lang" type="button">UA</button>
+              <button class="btn-lang" type="button">RU</button>
+            </div>
+          </div>
+          <button
+            type="button"
+            id="modal-btn3"
+            class="menu-order button"
+            data-modal-open
+          >
+            Отправить заявку
+          </button>
+
+          <button class="menu__btn" id="menu-btn-close" data-menu-close>
+            <img src="./images/close.svg" alt="" width="17" height="17" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- меню-бар -->
+    <div class="menu-bar">
+      <div class="container">
+        <div class="bar-wrap">
+          <a href="./" class="logo">
+            <img
+              src="./images/logo-scroll.svg"
+              alt="Logo company"
+              width="100px"
+              height="36px"
+          /></a>
+          <button class="menu-btn" id="menu-bar-btn"></button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/scroll.js"></script>
+  </body>
+</html>

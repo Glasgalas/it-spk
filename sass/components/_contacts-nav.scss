@@ -1,0 +1,29 @@
+.contacts-nav {
+  display: flex;
+  flex-direction: column;
+  color: $color-white;
+
+  &__provider {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__item {
+    text-align: right;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 156px;
+    margin-right: 5px;
+    color: $color-white;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.23;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

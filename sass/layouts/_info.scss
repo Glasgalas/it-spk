@@ -1,0 +1,24 @@
+.info {
+  margin-bottom: 56px;
+  color: $color-text-light;
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 27px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.2;
+
+    @media screen and (min-width: 768px) {
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+/.huskyrc
+/.lintstagedrc
+/.prettierrc.json
+/.vscode
+/node_modules

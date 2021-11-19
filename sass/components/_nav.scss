@@ -1,0 +1,19 @@
+.site-nav {
+  display: flex;
+  flex-direction: row;
+
+  &:ntn-child(3) {
+    margin-right: 0px;
+  }
+
+  &__link {
+    line-height: 1.22;
+    color: $color-white;
+    margin-right: 39px;
+    transition: all $t-duration $t-t-function;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

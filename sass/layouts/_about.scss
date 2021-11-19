@@ -1,0 +1,30 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 46px;
+
+  @media screen and (min-width: 1080px) {
+    margin-bottom: 61px;
+  }
+
+  &-flex-wrapper {
+    display: block;
+    @media screen and (min-width: 1080px) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 61px;
+    }
+  }
+}
+
+.about__title {
+  margin-bottom: 20px;
+  margin-right: 70px;
+  white-space: nowrap;
+}
+
+.about__text {
+  color: $color-text;
+  line-height: 1.3;
+}

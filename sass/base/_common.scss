@@ -1,0 +1,47 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-white;
+  color: $color-text;
+  font-family: $font;
+  font-size: 16px;
+  font-weight: 400;
+  @media screen and (min-width: 1080px) {
+    font-size: 18px;
+  }
+}
+
+.container {
+  width: 345px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 768px) and (max-width: 1079px) {
+    width: 100%;
+    max-width: 1079px;
+    // width: 768px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  @media screen and (min-width: 1080px) {
+    // width: 100%;
+    width: 1080px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
