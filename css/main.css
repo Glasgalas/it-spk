@@ -1161,6 +1161,10 @@ footer {
   }
 }
 
+.footer-lnk {
+  width: auto;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
