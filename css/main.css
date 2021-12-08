@@ -1098,73 +1098,6 @@ header {
   background-size: contain;
 }
 
-footer {
-  padding-top: 31px;
-  padding-bottom: 33px;
-  background-color: #06182f;
-  color: #ffffff;
-}
-
-@media screen and (min-width: 768px) {
-  footer {
-    padding-top: 28px;
-    padding-bottom: 28px;
-  }
-}
-
-.footer__text {
-  margin-bottom: 5px;
-  color: #00feff;
-}
-
-@media screen and (min-width: 768px) {
-  .footer__text {
-    margin-bottom: 19px;
-    text-align: right;
-  }
-}
-
-.footer__mail {
-  color: #ffffff;
-  line-height: 1.23;
-}
-
-.footer__mail:hover {
-  color: #00feff;
-}
-
-.footer__contacts:first-child {
-  margin-top: 22px;
-  margin-bottom: 18px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer__contacts:first-child {
-    margin-top: 16px;
-    margin-bottom: 0;
-  }
-}
-
-.footer__contacts:last-child {
-  margin-bottom: 28px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer__contacts:last-child {
-    margin-top: 5px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .copyright__text {
-    text-align: right;
-  }
-}
-
-.footer-lnk {
-  width: auto;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -1532,5 +1465,72 @@ footer {
   .grid-parent {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+footer {
+  padding-top: 31px;
+  padding-bottom: 33px;
+  background-color: #06182f;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+}
+
+.footer__text {
+  margin-bottom: 5px;
+  color: #00feff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__text {
+    margin-bottom: 19px;
+    text-align: right;
+  }
+}
+
+.footer__mail {
+  color: #ffffff;
+  line-height: 1.23;
+}
+
+.footer__mail:hover {
+  color: #00feff;
+}
+
+.footer__contacts:first-child {
+  margin-top: 22px;
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contacts:first-child {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+}
+
+.footer__contacts:last-child {
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__contacts:last-child {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .copyright__text {
+    text-align: right;
+  }
+}
+
+.footer-lnk {
+  width: 180px;
 }
 /*# sourceMappingURL=main.css.map */
