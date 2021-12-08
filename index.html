@@ -22,8 +22,8 @@
                 <img
                   src="./images/logo.svg"
                   alt="Logo company"
-                  width="144px"
-                  height="48px"
+                  width="144"
+                  height="48"
               /></a>
               <div class="thumb">
                 <span class="ua">ua</span>
@@ -42,13 +42,13 @@
               <ul class="contacts-nav">
                 <li class="contacts-nav__item">
                   <span class="contacts-nav__provider">lifecell</span>
-                  <a class="contacts-nav__link" href="tel: +380935412092"
+                  <a class="contacts-nav__link" href="tel:+380935412092"
                     >+380 93 541 20 92</a
                   >
                 </li>
                 <li class="contacts-nav__item">
                   <span class="contacts-nav__provider">Vodafone</span>
-                  <a class="contacts-nav__link" href="tel: +380993112979"
+                  <a class="contacts-nav__link" href="tel:+380993112979"
                     >+380 99 311 29 79
                   </a>
                 </li>
@@ -83,9 +83,8 @@
         </div>
       </section>
       <!-- о компании -->
-      <section class="about">
+      <section id="about" class="about">
         <div class="container">
-          <a name="about"></a>
           <div class="about-flex-wrapper">
             <div>
               <h2 class="title about__title">О нас</h2>
@@ -104,9 +103,8 @@
         </div>
       </section>
       <!-- сервисы -->
-      <section class="services">
+      <section id="services" class="services">
         <div class="container">
-          <a name="services"></a>
           <h2 class="title services__title">Услуги</h2>
           <ul class="services__wrap">
             <li class="services__item">
@@ -168,6 +166,7 @@
       </section>
       <!-- цель -->
       <section class="features">
+        <h2 class="visually-hidden">features</h2>
         <div class="container">
           <p class="offer features__text">
             Подключить обслуживание компьютеров у нас очень просто
@@ -194,9 +193,8 @@
         </div>
       </section>
       <!-- цены -->
-      <section class="price">
+      <section id="price" class="price">
         <div class="container">
-          <a name="price"></a>
           <h2 class="title price__title">Цены</h2>
           <div class="price-grid">
             <div class="price-block">
@@ -362,6 +360,8 @@
       </section>
       <!-- заявка -->
       <section class="order">
+        <h2 class="visually-hidden">order</h2>
+
         <div class="container grid-parent">
           <div class="order-div">
             <p class="order__text">
@@ -370,19 +370,21 @@
           </div>
 
           <div class="form-wrap">
-            <form class="form flex-parent" action="">
-              <label for="">
+            <form class="form flex-parent">
+              <label for="name">
                 <input
+                  id="name"
                   class="input"
                   type="text"
                   name="name"
                   pattern="^[A-Za-zА-Яа-яЁё\s]+$"
-                  require
+                  required
                   placeholder="Имя"
                 />
               </label>
-              <label for="">
+              <label for="phone">
                 <input
+                  id="phone"
                   class="input"
                   type="tel"
                   name="phone"
@@ -391,8 +393,9 @@
                   placeholder="Номер телефона"
                 />
               </label>
-              <label for="">
+              <label for="email">
                 <input
+                  id="email"
                   class="input"
                   type="email"
                   name="email"
@@ -400,7 +403,7 @@
                   placeholder="E-mail"
                 />
               </label>
-              <label for="">
+              <label for="user-message">
                 <textarea
                   class="input message"
                   name="message"
@@ -408,8 +411,9 @@
                   placeholder="Сообщение"
                 ></textarea>
               </label>
-              <label class="policy">
+              <div class="policy">
                 <input
+                  id="agreement"
                   class="checkbox"
                   type="checkbox"
                   name="policy"
@@ -417,10 +421,10 @@
                   required
                   checked
                 />
-                <p class="policy__text">
+                <label class="policy__text" for="agreement">
                   Даю согласие на обработку персональных данных
-                </p>
-              </label>
+                </label>
+              </div>
               <button class="button btn" type="submit">Отправить</button>
             </form>
           </div>
@@ -431,18 +435,18 @@
       <div class="container">
         <div class="flex-parent">
           <div class="flex-child">
-            <a href="mailto: info@it-spk.com" class="footer__mail"
+            <a href="mailto:info@it-spk.com" class="footer__mail"
               >info@it-spk.com</a
             >
             <ul>
               <li class="footer__contacts">
-                <a class="contacts-nav__link" href="tel: +380935412092"
+                <a class="contacts-nav__link" href="tel:+380935412092"
                   >+380 93 541 20 92</a
                 >
                 <span class="contacts-nav__provider"> lifecell </span>
               </li>
               <li class="footer__contacts">
-                <a class="contacts-nav__link" href="tel: +380993112979"
+                <a class="contacts-nav__link" href="tel:+380993112979"
                   >+380 99 311 29 79 </a
                 ><span class="contacts-nav__provider">Vodafone</span>
               </li>
@@ -464,19 +468,21 @@
         <button class="modal__btn" id="modal-btn-close" data-modal-close>
           <img src="./images/close.svg" alt="" width="17" height="17" />
         </button>
-        <form class="form flex-parent" action="">
-          <label for="">
+        <form class="form flex-parent">
+          <label for="name-modal">
             <input
+              id="name-modal"
               class="input"
               type="text"
               name="name"
               pattern="^[A-Za-zА-Яа-яЁё\s]+$"
-              require
+              required
               placeholder="Имя"
             />
           </label>
-          <label for="">
+          <label for="tel-modal">
             <input
+              id="tel-modal"
               class="input"
               type="tel"
               name="phone"
@@ -485,8 +491,9 @@
               placeholder="Номер телефона"
             />
           </label>
-          <label for="">
+          <label for="email-modal">
             <input
+              id="email-modal"
               class="input"
               type="email"
               name="email"
@@ -494,16 +501,17 @@
               placeholder="E-mail"
             />
           </label>
-          <label for="">
+          <label for="user-message-modal">
             <textarea
               class="input message"
               name="message"
-              id="user-message"
+              id="user-message-modal"
               placeholder="Сообщение"
             ></textarea>
           </label>
-          <label class="policy">
+          <div class="policy">
             <input
+              id="agreement-modal"
               class="checkbox"
               type="checkbox"
               name="policy"
@@ -511,10 +519,10 @@
               required
               checked
             />
-            <p class="policy__text">
+            <label class="policy__text" for="agreement-modal">
               Даю согласие на обработку персональных данных
-            </p>
-          </label>
+            </label>
+          </div>
           <button class="button btn" type="submit">Отправить</button>
         </form>
       </div>
@@ -529,21 +537,21 @@
               <img
                 src="./images/logo-mobile.svg"
                 alt="Logo company"
-                width="180px"
-                height="60px"
+                width="180"
+                height="60"
             /></a>
           </div>
 
           <div class="menu-wrap">
             <ul class="menu-contacts">
               <li class="menu-contacts__item">
-                <a class="menu-contacts__link" href="tel: +380935412092"
+                <a class="menu-contacts__link" href="tel:+380935412092"
                   >+380 93 541 20 92</a
                 >
                 <span class="menu-contacts__provider">lifecell</span>
               </li>
               <li class="menu-contacts__item">
-                <a class="menu-contacts__link" href="tel: +380993112979"
+                <a class="menu-contacts__link" href="tel:+380993112979"
                   >+380 99 311 29 79
                 </a>
                 <span class="menu-contacts__provider">Vodafone</span>
@@ -593,8 +601,8 @@
             <img
               src="./images/logo-scroll.svg"
               alt="Logo company"
-              width="100px"
-              height="36px"
+              width="100"
+              height="36"
           /></a>
           <button class="menu-btn" id="menu-bar-btn"></button>
         </div>

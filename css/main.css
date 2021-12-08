@@ -1050,6 +1050,7 @@ header {
 
 .policy {
   position: relative;
+  display: flex;
 }
 
 .policy__text {
