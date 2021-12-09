@@ -111,11 +111,6 @@
       border: 6px solid $color-bg-form;
       background-image: url(../images/checkbox-form.svg);
       background-size: contain;
-
-      @media screen and (min-width: 768px) {
-        left: 0;
-        top: 0;
-      }
     }
   }
 }
