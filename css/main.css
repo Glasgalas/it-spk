@@ -1065,21 +1065,14 @@ header {
 .policy__text::before {
   content: "";
   position: absolute;
-  left: -298px;
-  top: 22px;
+  left: 0px;
+  top: 0px;
   display: inline-block;
   width: 20px;
   height: 20px;
   border: 6px solid #ececec;
   background-image: url(../images/checkbox-form.svg);
   background-size: contain;
-}
-
-@media screen and (min-width: 768px) {
-  .policy__text::before {
-    left: 0;
-    top: 0;
-  }
 }
 
 .checkbox {
